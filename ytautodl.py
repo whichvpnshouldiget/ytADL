@@ -28,7 +28,6 @@
 import requests
 import subprocess
 import argparse
-from apikey import apikey
 from validation import *
 from utils import *
 import os
