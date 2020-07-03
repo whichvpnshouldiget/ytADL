@@ -11,7 +11,7 @@ def bold(text):
 def underline(text):
     stripformatting = "\u001b[0m"
     underline_text = "\u001b[4m"
-    return r"".join([underline_text, text, stripformatting])
+    return "".join([underline_text, text, stripformatting])
 
 
 def color(text, text_color=None):
@@ -30,7 +30,7 @@ def color(text, text_color=None):
         choice = color_choices["matrix"]
     else:
         choice = color_choices[text_color]
-    return r"".join([choice, text, stripformatting])
+    return "".join([choice, text, stripformatting])
 
 
 # returnhome = "\u001b[1000D"
